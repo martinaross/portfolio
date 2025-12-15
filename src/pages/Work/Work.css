@@ -1,0 +1,407 @@
+.profile-section {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+
+}
+
+/* IMAGEN */
+.profile-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* TEXTO */
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+  padding-top: 8px;
+}
+
+.profile-right h2 {
+  font-size: 1.15rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.previous {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* Sección de texto */
+.intro-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  color: #2d2d2d;
+}
+
+/* texto destacado */
+.highlight {
+  background: #eaf5c8;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* línea después del bloque */
+.intro-section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  margin-top: 35px;
+}
+
+/* --- WRAPPER GENERAL --- */
+/* CONTENEDOR EDUCACIÓN */
+.edu-wrapper {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent;
+}
+
+/* LINEA DIVISORIA COMO LA ANTERIOR */
+.edu-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  margin-top: 50px;
+}
+
+
+/* SUBTÍTULO: estilo servicios */
+.edu-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--verde-icono);
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/* TÍTULO: estilo services-title */
+.edu-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--verde-texto);
+  margin-bottom: 35px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Parte en serif como "que ofrezco" */
+.edu-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--verde-texto);
+}
+
+/* --- CARDS CONTAINER --- */
+.edu-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* --- CARD --- */
+.edu-card {
+  background: #f3f3f3;
+  /* verde muy claro */
+  border-radius: 16px;
+  padding: 30px;
+  width: 480px;
+  text-align: left;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* --- ICONO --- */
+.edu-icon {
+  font-size: 2rem;
+  background: #C8E6A0;
+  color: #556B2F;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- TEXTO DENTRO DE CARD --- */
+.edu-type {
+  color: #4b7058;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.edu-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.edu-institution {
+  color: #6baa78;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.edu-description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* --- TAGS --- */
+.edu-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.tag {
+  background: #D8E8B5;
+  color: #4E4E4E;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* CARRUCER CERTIFICADO  */
+/* CONTENEDOR PRINCIPAL */
+.logros-section {
+  text-align: center;
+  padding: 40px 5% 10px;
+  background: transparent;
+  /* ← SIN FONDO */
+  color: var(--verde-texto);
+}
+
+.logros-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--verde-icono);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.logros-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--verde-texto);
+}
+
+.logros-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--verde-texto);
+}
+
+.cert-card {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+/* COLUMNA IZQUIERDA (imagen o placeholder) */
+.cert-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cert-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* COLUMNA DERECHA (texto) */
+.cert-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cert-org {
+  color: #556B2F;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.cert-right h3 {
+  color: #4E4E4E;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.cert-right p {
+  color: #797979;
+}
+
+/* FLECHAS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Servicios .css */
+:root {
+  --verde-fondo: #f4fbe5;
+  --verde-suave: #eaf5c8;
+  --verde-borde: #cfe8a0;
+  --verde-texto: #2e4a31;
+  --verde-icono: #8bbf72;
+}
+
+/* Sección principal */
+.servicios-section {
+  text-align: center;
+  padding: 80px 5%;
+  background: var(--verde-fondo);
+  color: var(--verde-texto);
+}
+
+/* Subtítulo */
+.servicios-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--verde-icono);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Título */
+.servicios-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.servicios-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--verde-texto);
+}
+
+/* Descripción */
+.servicios-description {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* TARJETAS */
+.servicio-card {
+  background: #ffffff;
+  border: 1px solid var(--verde-borde);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.servicio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícono */
+.servicio-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--verde-suave);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--verde-texto);
+}
+
+/* Título dentro de card */
+.servicio-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.servicio-card p {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* Lista */
+.servicio-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicio-card li {
+  color: var(--verde-texto);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.servicio-card li::before {
+  content: "•";
+  color: var(--verde-icono);
+  position: absolute;
+  left: 0;
+}

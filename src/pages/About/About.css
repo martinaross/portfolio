@@ -1,0 +1,138 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 5%;
+  background: #ffffff;
+}
+
+/* ===========================
+   FOTO REDONDA (UNA SOLA)
+=========================== */
+.about-left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-img {
+  width: 350px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   LÍNEA CURVA DECORATIVA
+=========================== */
+.about-line {
+  width: 350px;
+  height: 200px;
+  border-bottom: 3px dashed #d3ead7;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+}
+
+/* ===========================
+   TEXTO DE LA DERECHA
+=========================== */
+.about-right {
+  width: 45%;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+.about-section h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #8d7c6f;
+  margin-bottom: 8px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+/* Seccion */
+
+.filosofia-container {
+  padding: 2rem 5%;
+  margin-top: 2rem;
+}
+
+.filosofia-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8d8d8d;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.filosofia-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filosofia-card {
+  background: #C8E6A0;
+  border: 1px solid #556B2F;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 30%;
+  min-width: 260px;
+  transition: all 0.3s ease;
+}
+
+.filosofia-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.emoji {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .filosofia-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .filosofia-card {
+    width: 100%;
+  }
+}
