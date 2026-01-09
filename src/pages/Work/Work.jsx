@@ -275,7 +275,7 @@ const Work = () => {
 
             <ul>
               <li>Optimización de la experiencia visual</li>
-              <li>Mejoras continuasen la interfaz</li>
+              <li>Mejoras continuas en la interfaz</li>
               <li>Maquetación y ajustes visuales en frontend</li>
             </ul>
           </div>
