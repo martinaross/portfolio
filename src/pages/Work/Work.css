@@ -405,3 +405,205 @@
   position: absolute;
   left: 0;
 }
+
+/* ===============================
+   MOBILE (hasta 768px)
+   =============================== */
+
+@media (max-width: 768px) {
+
+  /*  BLOQUEO SCROLL HORIZONTAL */
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Seguridad global */
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* PERFIL */
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-top: 50px;
+    overflow-x: hidden;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-right h2 {
+    font-size: 1.1rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
+
+  .previous {
+    font-size: 0.85rem;
+  }
+
+  /* INTRO */
+  .intro-section {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 30px auto;
+    overflow-x: hidden;
+  }
+
+  /* EDUCACIÓN */
+  .edu-title {
+    font-size: 1.9rem;
+  }
+
+  .edu-card {
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .edu-icon {
+    margin: 0 auto;
+  }
+
+  .edu-description {
+    font-size: 0.9rem;
+  }
+
+  .edu-tags {
+    justify-content: center;
+  }
+
+  /* CERTIFICADOS (CARRUSEL) */
+  .carousel,
+  .carousel-inner,
+  .carousel-item,
+  .cert-card {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .cert-card {
+    flex-direction: column;
+  }
+
+  .cert-left,
+  .cert-right {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cert-right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .cert-right h3 {
+    font-size: 1.3rem;
+  }
+
+  .cert-right p {
+    font-size: 0.95rem;
+  }
+
+  /* SERVICIOS */
+  .servicios-title {
+    font-size: 2rem;
+  }
+
+  .servicios-description {
+    font-size: 0.95rem;
+  }
+
+  .servicio-card {
+    padding: 25px;
+  }
+}
+
+
+/* mobile chico */
+@media (max-width: 480px) {
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .intro-section {
+    font-size: 0.95rem;
+  }
+
+  .edu-title,
+  .logros-title,
+  .servicios-title {
+    font-size: 1.7rem;
+  }
+
+  .cert-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .cert-right p {
+    font-size: 0.9rem;
+  }
+
+  .servicio-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .profile-section {
+    gap: 30px;
+  }
+
+  .edu-card {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .cert-right h3 {
+    font-size: 1.4rem;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop grande  */
+@media (min-width: 1400px) {
+
+  .profile-section,
+  .intro-section,
+  .edu-wrapper {
+    max-width: 1200px;
+  }
+
+  .edu-title {
+    font-size: 3rem;
+  }
+
+  .logros-title {
+    font-size: 2.8rem;
+  }
+
+  .servicios-title {
+    font-size: 2.8rem;
+  }
+}

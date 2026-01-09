@@ -20,19 +20,19 @@ const About = () => {
           <div className="about-section">
             <h3>ACERCA DE MÍ</h3>
             <p>
-              Soy diseñadora/developer apasionada por la creatividad,
-              las interfaces limpias y las experiencias que generan emoción.
-              Actualmente sigo creciendo como Front-End Developer con React.
+              Soy <strong>Full Stack Developer</strong> con una fuerte base en diseño.
+              Me apasiona construir soluciones integrales, desde la conceptualización visual
+              hasta la arquitectura lógica, creando interfaces limpias y experiencias que generan emoción.
             </p>
           </div>
 
-          <div className="about-section">
+          {/* <div className="about-section">
             <h3>VIAJE DE DISEÑO</h3>
             <p>
               Comencé creando diseños y con los años descubrí
               el mundo del desarrollo web, donde combino estética, lógica y detalle.
             </p>
-          </div>
+          </div> */}
 
           <div className="about-section">
             <h3>DATO CURIOSO</h3>
@@ -45,7 +45,7 @@ const About = () => {
       </section>
       <section className="filosofia-container">
         <h2 className="edu-title">
-          Educación y <span>Formación</span>
+          Mi Enfoque <span>Creativo</span>
         </h2>
 
         <div className="filosofia-grid">
@@ -63,8 +63,7 @@ const About = () => {
             <h3 className="card-title">Resuelve con simplicidad.</h3>
             <p className="card-text">
               <strong>A veces </strong>, un problema no es tan complejo como parece. A veces, las mejores soluciones
-              son las menos complicadas para todos. Diseño para mantener las cosas simples
-              para mí y para los demás.
+              son las menos complicadas para todos. Diseño para mantener las cosas simples.
             </p>
           </div>
 

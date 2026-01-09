@@ -136,3 +136,104 @@
     width: 100%;
   }
 }
+
+/* ===========================
+   💻 TABLETS (max-width: 1024px)
+=========================== */
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 40px;
+    padding: 60px 5%;
+  }
+
+  .about-img,
+  .about-line {
+    width: 300px;
+    /* Reducción proporcional */
+  }
+
+  .about-img {
+    height: 330px;
+  }
+
+  .about-title {
+    font-size: 2.6rem;
+  }
+
+  .filosofia-card {
+    width: 45%;
+    /* Pasan a ser 2 por fila en lugar de 3 */
+  }
+}
+
+/* ===========================
+   📱 CELULARES (max-width: 768px)
+=========================== */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    /* Apilado vertical */
+    align-items: center;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-left {
+    margin-bottom: 60px;
+    /* Espacio para la línea decorativa */
+  }
+
+  .about-img,
+  .about-line {
+    width: 280px;
+  }
+
+  .about-img {
+    height: 300px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  /* Filosofía */
+  .filosofia-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filosofia-card {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* ===========================
+   📏 MÓVILES PEQUEÑOS (max-width: 480px)
+=========================== */
+@media (max-width: 480px) {
+
+  .about-img,
+  .about-line {
+    width: 240px;
+  }
+
+  .about-img {
+    height: 260px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .filosofia-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
